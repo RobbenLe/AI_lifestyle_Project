@@ -1,29 +1,34 @@
-# AI Health Model (PostgreSQL + PyTorch)
+## How to Run the Project
 
-This project trains a small neural network on daily health features aggregated from PostgreSQL.
+### 1. Clone the repository
 
-## Getting started
+```bash
+git clone https://github.com/RobbenLe/AI_lifestyle_Project.git
+cd ai-health-model
 
-1. Create your environment (or reuse your **AE Shared** venv) and install requirements:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-2. Copy `.env.example` to `.env` and set your PostgreSQL credentials:
-   ```ini
-   PGHOST=localhost
-   PGPORT=5432
-   PGDATABASE=analytics
-   PGUSER=postgres
-   PGPASSWORD=postgres
-   ```
+### 2. Create and activate a virtual environment
 
-3. Run quick SQL sanity checks (optional): see `sql/sanity_checks.sql`.
+#Windows
 
-4. Use the scripts:
-   - `python -m scripts.export_features` to export a CSV of daily features.
-   - `python -m scripts.predict_next_day --date YYYY-MM-DD` to get a next-day prediction (after training).
+python -m venv .venv
+.venv\Scripts\activate
 
-## Structure
 
-See the folder layout inside the repository. Each Python file is heavily commented and beginner-friendly.
+#macOS / Linux
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+
+### 3. Install Dependencies 
+pip install -r requirements.txt
+
+
+### Install Streamlit 
+pip install streamlit
+### Run the streamlin app
+streamlit run streamlit_app.py
+
+#If you only wants to run the Streamlit app + models, yoi do not need PostgreSQL running.
+Those packages will just be installed but not used.
