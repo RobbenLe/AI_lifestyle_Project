@@ -1,0 +1,8 @@
+pandas
+numpy
+python-dotenv
+psycopg[binary]
+SQLAlchemy>=2.0
+torch
+tqdm
+scikit-learn

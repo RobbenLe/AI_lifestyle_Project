@@ -1,0 +1,2 @@
+user_id,days,total_steps,avg_steps,peak_steps,peak_day,lowest_steps,lowest_day,chart
+3859,16,127553,7972.0625,23292,2025-06-09,483,2025-06-09,charts\steps_user_3859.png

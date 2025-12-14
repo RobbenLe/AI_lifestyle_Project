@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-health-model"
+version = "0.1.0"
+description = "Neural network for health data from PostgreSQL"
+authors = [{name="You", email="you@example.com"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas",
+    "numpy",
+    "python-dotenv",
+    "psycopg[binary]",
+    "SQLAlchemy>=2.0",
+    "torch",
+    "tqdm",
+    "scikit-learn"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
