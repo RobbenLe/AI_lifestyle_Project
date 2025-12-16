@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ### Install Streamlit 
 pip install streamlit
 ### Run the streamlin app
-streamlit run streamlit_app.py
+"..\.venv\Scripts\python.exe" -m streamlit run streamlit_app.py
 
 #If you only wants to run the Streamlit app + models, yoi do not need PostgreSQL running.
 Those packages will just be installed but not used.
