@@ -1,10 +1,10 @@
-🧠 AI Health Model – Lifestyle Persona Classification
+AI Health Model – Lifestyle Persona Classification
 
 This project builds a machine learning model that classifies users into 5 lifestyle personas based on daily health indicators.
 
 The model is trained using a Keras Conv1D (CNN) neural network and deployed through a Streamlit web application for interactive use.
 
-🚀 What This Project Does
+What This Project Does
 
 The AI model uses daily aggregated data to classify users into one of the following personas:
 
